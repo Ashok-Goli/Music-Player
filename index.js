@@ -1,13 +1,10 @@
-
 var leftDiv = document.getElementById("left-div")
-var rightDiv = document.getElementById("right-div")
 var titleElement = document.getElementById("title")
 
-$.get("http://5dd1894f15bbc2001448d28e.mockapi.io/playlist", function (response) {
+$.get("http://5dd1894f15bbc2001448d28e.mockapi.io/playlist",function(response){
     var audioData = response
     localStorage.setItem("audioData",JSON.stringify(audioData))
     console.log(JSON.parse(localStorage.getItem("audioData")))
-    var rightDiv = document.getElementById("right-div")
     for (var i = 0; i < audioData.length; i++) {
         rightDiv.innerHTML += `
         <div id="card-wrapper" onclick="selectedAudio(${i})">
