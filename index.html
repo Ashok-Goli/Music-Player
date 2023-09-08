@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/27e3a317db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div id="main-div">
+            <div id="left-div">
+                <audio id="audioElement0">
+                    <source id="source"
+                        src="https://edyoda.s3.ap-south-1.amazonaws.com/public/musicfiles/without-you.mp3" />
+                </audio>
+                <img id="image" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" />
+                <div id="progressbar-wrapper">
+                    <div id="progressbar0" class="progressBar">
+
+                    </div>
+                </div>
+                <div id="buttons-wrapper">
+                    <div id="suffle0" class="btn-div" onclick="suffle(0)">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <div id="backward0" class="btn-div" onclick="backward(0)">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div id="play0" class="btn-div" onclick="play(0)">
+                        <i id="icon0" class="far fa-play-circle"></i>
+                    </div>
+                    <div id="forward0" class="btn-div" onclick="forward(0)">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div id="restart0" class="btn-div" onclick="restart(0)">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                </div>
+                <div id="title">
+                    <h2>Without You</h2>
+                    <p>Avicii</p>
+                </div>
+            </div>
+            <div id="right-div">
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');
+
+* {
+    margin: 0px;
+    font-family: Josefin Sans;
+
+}
+
+body {
+    /* background-image: url("https://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-26052-26737-hd-wallpapers.jpg.png"); */
+    animation: changeBackgroundColor 10s linear infinite;
+
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #ff5733;
+        /* Start color */
+    }
+
+    20% {
+        background-color: #33ff57;
+        /* Change color 1 */
+    }
+
+    40% {
+        background-color: #5733ff;
+        /* Change color 2 */
+    }
+
+    60% {
+        background-color: #ff5733;
+        /* Change color 3 */
+    }
+
+    80% {
+        background-color: #33ff57;
+        /* Change color 4 */
+    }
+
+    100% {
+        background-color: #5733ff;
+        /* End color, looping to start */
+    }
+}
+
+
+#main-div {
+    background: #654ea3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 3px 3px 20px black;
+
+    width: 70%;
+    display: flex;
+    margin: 30px auto;
+    border-radius: 20px;
+    height: 80vh;
+    margin-top: 75px;
+    padding: 16px;
+    box-sizing: content-box;
+}
+
+#left-div {
+    width: 70%;
+    border-right: 1px solid #5e96bb;
+}
+
+#right-div {
+    width: 30%;
+    overflow: auto;
+    color: rgb(234, 191, 255);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7F7FD5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 10px;
+}
+
+#image {
+    width: 300px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    margin-left: 215px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+#progressbar-wrapper {
+    width: 90%;
+    height: 8px;
+    background-color: rgb(63, 63, 63);
+    margin: 0px auto;
+    border-radius: 50px;
+    text-align: center;
+
+}
+
+.progressBar {
+    height: 100%;
+    width: 0%;
+    background: #7F7FD5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 50px;
+}
+
+#buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.btn-div {
+    font-size: 20px;
+    color: #15124b;
+    opacity: 0.5;
+    opacity: .6;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.fa-play-circle,
+.fa-pause-circle {
+    font-size: 45px;
+    margin: 0px -15px;
+}
+
+.btn-div:hover {
+    color: #15124b;
+    opacity: 1;
+}
+
+#title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#title>h2 {
+    margin-bottom: 20px;
+}
+
+#card-wrapper {
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+    box-sizing: content-box;
+    /* border-bottom: 2px solid #292941; */
+    cursor: pointer;
+}
+
+#card-img {
+    width: 30%;
+
+}
+
+#card-img>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#card-content {
+    width: 70%;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+#card-content>h3 {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
